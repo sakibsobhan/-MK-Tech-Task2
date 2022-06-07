@@ -1,0 +1,238 @@
+/* ==== font start ==== */
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+/* ==== font end ==== */
+
+
+
+/* ==== variable css start ==== */
+:root {
+    --ff: 'PT Sans', sans-serif;
+
+}
+
+/* ==== variable css start ==== */
+
+
+
+/* ==== common css start ==== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+ul,ol{
+    list-style: none;
+    padding: 0;
+}
+/* ==== common css end ==== */
+
+
+
+/* ==== nav css start ==== */
+nav{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 8px;
+}
+nav ul{
+    width: 100%;
+}
+nav ul li{
+    padding: 8px 0px;
+    margin: 0 20px;
+}
+nav ul li a{
+    color: green !important;
+    transition: .4s !important;
+    font-family: var(--ff) !important;
+    font-size: 18px !important;
+    font-weight: 700 !important;
+}
+
+nav ul li a:hover{
+    color: red !important;
+}
+nav form a {
+	width: 140px;
+	font-family: var(--ff) !important;
+	font-size: 16px !important;
+	color: white;
+	height: 45px;
+	background: green;
+	text-align: center;
+	line-height: 45px;
+	font-weight: 700;
+	border-radius: 30px;
+    transition: .4s;
+}
+nav form a:hover{
+    background: red;
+    color: white;
+}
+@media (max-width: 575px) {
+    nav ul{
+        border-radius: 0;
+        background: transparent;
+    }
+    nav ul li{
+        text-align: center;
+    }
+    nav ul li a{
+        color: green !important;
+    }
+    nav form a{
+        margin: 0 auto;
+    }
+}
+/* ==== nav css end ==== */
+
+
+
+/* ==== banner-part css start ==== */
+#banner-part{
+    margin-top: 50px;
+}
+#banner-part .banner-slider .item{
+    margin: 20px 0;
+}
+#banner-part .banner-slider .item .left img{
+    border-radius: 6px;
+}
+#banner-part .banner-slider .item .right{
+    padding: 50px 0;
+}
+#banner-part .banner-slider .item .right{
+    padding-left: 50px;
+}
+#banner-part .banner-slider .item .right h3{
+    font-family: var(--ff);
+    font-size: 30px;
+}
+#banner-part .banner-slider .item .right p{
+    font-family: var(--ff);
+    font-size: 16px;
+    margin: 50px 0
+}
+#banner-part .banner-slider .item .right a{
+    display: inline-block;
+    font-family: var(--ff);
+    font-size: 20px;
+    padding: 15px 30px;
+    background: green;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.25) 1.95px 1.95px 2.6px;
+    border-radius: 60px;
+    transition: .4s;
+}
+#banner-part .banner-slider .item .right a:hover{
+    background: red;
+    margin-top: -5px;
+}
+#banner-part .banner-slider{
+    position: relative;
+}
+#banner-part .banner-slider .prev{
+position: absolute;
+top: 50%;
+left: -100px;
+transform: translateY(-50%);
+font-size: 30px;
+color: green;
+cursor: pointer;
+width: 50px;
+height: 50px;
+border-radius: 50%;
+text-align: center;
+line-height: 50px;
+background: transparent;
+transition: .4s;
+}
+#banner-part .banner-slider .prev:hover{
+    background: green;
+    color: white;
+    left: -110px;
+}
+#banner-part .banner-slider .next{
+position: absolute;
+top: 50%;
+right: -100px;
+transform: translateY(-50%);
+font-size: 30px;
+color: green;
+cursor: pointer;
+width: 50px;
+height: 50px;
+border-radius: 50%;
+text-align: center;
+line-height: 50px;
+background: transparent;
+transition: .4s;
+}
+#banner-part .banner-slider .next:hover{
+    background: green;
+    color: white;
+    right: -110px;
+}
+/* ==== banner-part css end ==== */
+
+
+
+/* ==== about-part css start ==== */
+#about-part{
+    margin: 100px 0;
+}
+#about-part .main{
+    display: flex;
+    justify-content: space-between;
+}
+#about-part .main .item{
+    text-align: center;
+}
+#about-part .main .item h3{
+    font-family: var(--ff);
+    font-size: 30px;
+    color: green;
+    margin: 20px 0;
+}
+#about-part .main .item li a{
+    font-family: var(--ff);
+    font-size: 18px;
+    color: rgb(26, 26, 26);
+    display: inline-block;
+    margin: 5px 0;
+    transition: .4s;
+}
+#about-part .main .item li a:hover{
+    color: green;
+}
+#about-part .main .item li a:hover i{
+    color: rgb(255, 75, 75);
+}
+#about-part .main .item li a i{
+    font-size: 14px;
+    color: rgb(74, 74, 74);
+    transition: .4s;
+}
+#about-part .main .item li .round{
+    color: green;
+    margin-right: 5px;
+    transition: .4s;
+    font-size: 18px;
+}
+#about-part .main .item li:hover .round{
+    transform: rotate(360deg);
+    color: green;
+}
+@media (max-width: 575px){
+    #about-part .main{
+        display: flex;
+        flex-direction: column;
+    }
+}
+/* ==== about-part css end ==== */
+
+
+
+
